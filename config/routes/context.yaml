@@ -1,0 +1,4 @@
+context:lookup:
+  path: /lookup
+  controller: App\Controller\BaseController::lookup
+  methods: GET

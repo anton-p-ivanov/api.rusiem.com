@@ -1,0 +1,29 @@
+forms:list:
+  path: /
+  controller: App\Controller\BaseController::list
+  methods: GET
+
+forms:lookup:
+  path: /lookup
+  controller: App\Controller\BaseController::lookup
+  methods: GET
+
+forms:create:
+  path: /
+  controller: App\Controller\BaseController::create
+  methods: POST
+
+forms:view:
+  path: /{uuid<[\w\-]{36}>}
+  controller: App\Controller\BaseController::view
+  methods: GET
+
+forms:update:
+  path: /{uuid<[\w\-]{36}>}
+  controller: App\Controller\BaseController::update
+  methods: PUT
+
+forms:delete:
+  path: /{uuid<[\w\-]{36}>}
+  controller: App\Controller\BaseController::delete
+  methods: DELETE

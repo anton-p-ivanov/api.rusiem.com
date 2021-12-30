@@ -1,0 +1,20 @@
+App\Entity\Vacancy\Group:
+  constraints:
+    - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity: slug
+  properties:
+    title:
+      - NotBlank: ~
+      - Length:
+          max: 250
+    slug:
+      - NotBlank: ~
+      - Length:
+          max: 250
+      - Regex:
+          pattern: /^[a-z0-9_\-]+$/i
+    description:
+      - Length:
+          max: 1000
+    sort:
+      - Type: numeric
+      - GreaterThan: 0

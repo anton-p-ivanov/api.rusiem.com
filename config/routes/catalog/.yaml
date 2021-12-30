@@ -1,0 +1,6 @@
+catalog:tags:
+  resource: 'tags.yaml'
+  trailing_slash_on_root: false
+  prefix: /tags
+  defaults:
+    repositoryClass: App\Entity\Catalog\Tag

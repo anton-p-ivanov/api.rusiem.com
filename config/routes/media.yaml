@@ -1,0 +1,19 @@
+media:upload:
+  path: /upload
+  controller: App\Controller\MediaController::upload
+  methods: POST
+
+media:preview:
+  path: /{uuid<[\w\-]{36}>}/preview
+  controller: App\Controller\MediaController::preview
+  methods: GET
+
+media:download:
+  path: /{uuid<[\w\-]{36}>}/download
+  controller: App\Controller\MediaController::download
+  methods: GET
+
+media:delete:
+  path: /{uuid<[\w\-]{36}>}
+  controller: App\Controller\MediaController::delete
+  methods: DELETE

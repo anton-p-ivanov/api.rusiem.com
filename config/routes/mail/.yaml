@@ -1,0 +1,6 @@
+mail:templates:
+  resource: 'templates.yaml'
+  trailing_slash_on_root: false
+  prefix: /templates
+  defaults:
+    repositoryClass: App\Entity\Mail\Template

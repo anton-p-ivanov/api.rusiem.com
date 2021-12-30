@@ -1,0 +1,4 @@
+sites:list:
+  path: /
+  controller: App\Controller\BaseController::list
+  methods: GET

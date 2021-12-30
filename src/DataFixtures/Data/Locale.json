@@ -1,0 +1,13 @@
+[
+  {
+    "slug": "ru",
+    "title": "Русский",
+    "sort": 100,
+    "isDefault": true
+  },
+  {
+    "slug": "en",
+    "title": "English",
+    "sort": 200
+  }
+]

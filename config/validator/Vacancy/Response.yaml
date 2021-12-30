@@ -1,0 +1,19 @@
+App\Entity\Vacancy\Response:
+  properties:
+    fullName:
+      - NotBlank: ~
+      - Length:
+          max: 250
+    email:
+      - NotBlank: ~
+      - Email: ~
+    phone:
+      - NotBlank: ~
+      - Length:
+          max: 250
+    vacancy:
+      - NotBlank: ~
+      - Type: App\Entity\Vacancy\Vacancy
+    file:
+      - NotBlank: ~
+      - Type: App\Entity\Media\File

@@ -1,0 +1,16 @@
+App\Entity\Mail\Template:
+  constraints:
+    - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity: code
+  properties:
+    code:
+      - NotBlank: ~
+      - Length:
+          max: 255
+    sender:
+      - NotBlank: ~
+      - Email: ~
+    recipient:
+      - NotBlank: ~
+      - Email: ~
+    translations:
+      - Valid: ~

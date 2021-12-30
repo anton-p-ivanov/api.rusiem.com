@@ -1,0 +1,9 @@
+locales:list:
+  path: /
+  controller: App\Controller\BaseController::list
+  methods: GET
+
+locales:lookup:
+  path: /lookup
+  controller: App\Controller\BaseController::lookup
+  methods: GET

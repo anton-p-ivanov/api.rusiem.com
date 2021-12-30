@@ -1,0 +1,9 @@
+App\Entity\Mail\TemplateLang:
+  properties:
+    locale:
+      - Type: App\Entity\Locale
+      - NotBlank: ~
+    subject:
+      - NotBlank: ~
+      - Length:
+          max: 250

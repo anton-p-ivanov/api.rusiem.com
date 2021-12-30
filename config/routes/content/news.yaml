@@ -1,0 +1,24 @@
+content:news:list:
+  path: /
+  controller: App\Controller\BaseController::list
+  methods: GET
+
+content:news:create:
+  path: /
+  controller: App\Controller\BaseController::create
+  methods: POST
+
+content:news:view:
+  path: /{uuid<[\w\-]{36}>}
+  controller: App\Controller\BaseController::view
+  methods: GET
+
+content:news:update:
+  path: /{uuid<[\w\-]{36}>}
+  controller: App\Controller\BaseController::update
+  methods: PUT
+
+content:news:delete:
+  path: /{uuid<[\w\-]{36}>}
+  controller: App\Controller\BaseController::delete
+  methods: DELETE

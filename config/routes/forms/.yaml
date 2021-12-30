@@ -1,0 +1,13 @@
+forms:
+  resource: 'forms.yaml'
+  trailing_slash_on_root: false
+  prefix: /
+  defaults:
+    repositoryClass: App\Entity\Form\Form
+
+forms:statuses:
+  resource: 'statuses.yaml'
+  trailing_slash_on_root: false
+  prefix: /
+  defaults:
+    repositoryClass: App\Entity\Form\Status

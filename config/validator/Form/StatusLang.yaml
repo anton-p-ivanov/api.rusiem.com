@@ -1,0 +1,9 @@
+App\Entity\Form\StatusLang:
+  properties:
+    locale:
+      - Type: App\Entity\Locale
+      - NotBlank: ~
+    title:
+      - NotBlank: ~
+      - Length:
+          max: 250

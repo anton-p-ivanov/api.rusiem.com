@@ -1,0 +1,9 @@
+tags:list:
+  path: /
+  controller: App\Controller\BaseController::list
+  methods: GET
+
+tags:lookup:
+  path: /lookup
+  controller: App\Controller\BaseController::lookup
+  methods: GET

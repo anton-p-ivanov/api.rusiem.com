@@ -1,0 +1,24 @@
+forms:statuses:list:
+  path: /{uuid<[\w\-]{36}>}/statuses
+  controller: App\Controller\BaseController::list
+  methods: GET
+
+forms:statuses:create:
+  path: /statuses
+  controller: App\Controller\BaseController::create
+  methods: POST
+
+forms:statuses:view:
+  path: /statuses/{uuid<[\w\-]{36}>}
+  controller: App\Controller\BaseController::view
+  methods: GET
+
+forms:statuses:update:
+  path: /statuses/{uuid<[\w\-]{36}>}
+  controller: App\Controller\BaseController::update
+  methods: PUT
+
+forms:statuses:delete:
+  path: /statuses/{uuid<[\w\-]{36}>}
+  controller: App\Controller\BaseController::delete
+  methods: DELETE

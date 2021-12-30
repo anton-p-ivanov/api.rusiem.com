@@ -1,0 +1,14 @@
+user:params:view:
+  path: /params
+  controller: App\Controller\ParamsController::view
+  methods: GET
+
+user:params:update:
+  path: /params
+  controller: App\Controller\ParamsController::update
+  methods: PATCH
+
+user:params:delete:
+  path: /params
+  controller: App\Controller\ParamsController::delete
+  methods: DELETE

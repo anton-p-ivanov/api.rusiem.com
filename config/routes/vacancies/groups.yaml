@@ -1,0 +1,24 @@
+vacancies:groups:list:
+  path: /
+  controller: App\Controller\BaseController::list
+  methods: GET
+
+vacancies:groups:create:
+  path: /
+  controller: App\Controller\BaseController::create
+  methods: POST
+
+vacancies:groups:view:
+  path: /{uuid<[\w\-]{36}>}
+  controller: App\Controller\BaseController::view
+  methods: GET
+
+vacancies:groups:update:
+  path: /{uuid<[\w\-]{36}>}
+  controller: App\Controller\BaseController::update
+  methods: PUT
+
+vacancies:groups:delete:
+  path: /{uuid<[\w\-]{36}>}
+  controller: App\Controller\BaseController::delete
+  methods: DELETE

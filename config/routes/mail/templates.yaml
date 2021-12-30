@@ -1,0 +1,29 @@
+mail:templates:list:
+  path: /
+  controller: App\Controller\BaseController::list
+  methods: GET
+
+mail:templates:lookup:
+  path: /lookup
+  controller: App\Controller\BaseController::lookup
+  methods: GET
+
+mail:templates:create:
+  path: /
+  controller: App\Controller\BaseController::create
+  methods: POST
+
+mail:templates:view:
+  path: /{uuid<[\w\-]{36}>}
+  controller: App\Controller\BaseController::view
+  methods: GET
+
+mail:templates:update:
+  path: /{uuid<[\w\-]{36}>}
+  controller: App\Controller\BaseController::update
+  methods: PUT
+
+mail:templates:delete:
+  path: /{uuid<[\w\-]{36}>}
+  controller: App\Controller\BaseController::delete
+  methods: DELETE

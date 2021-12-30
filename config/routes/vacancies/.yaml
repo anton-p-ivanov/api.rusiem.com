@@ -1,0 +1,20 @@
+vacancies:
+  resource: 'vacancies.yaml'
+  trailing_slash_on_root: false
+  prefix: /
+  defaults:
+    repositoryClass: App\Entity\Vacancy\Vacancy
+
+vacancies:groups:
+  resource: 'groups.yaml'
+  trailing_slash_on_root: false
+  prefix: /groups
+  defaults:
+    repositoryClass: App\Entity\Vacancy\Group
+
+vacancies:responses:
+  resource: 'responses.yaml'
+  trailing_slash_on_root: false
+  prefix: /responses
+  defaults:
+    repositoryClass: App\Entity\Vacancy\Response

@@ -1,0 +1,22 @@
+[
+  {
+    "slug": "default",
+    "title": "Default"
+  },
+  {
+    "slug": "news",
+    "title": "News"
+  },
+  {
+    "slug": "article",
+    "title": "Article"
+  },
+  {
+    "slug": "event",
+    "title": "Event"
+  },
+  {
+    "slug": "resume",
+    "title": "Resume"
+  }
+]

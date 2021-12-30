@@ -1,0 +1,30 @@
+[
+  {
+    "name": "ROLE_USER",
+    "isDefault": true,
+    "translations": [
+      {
+        "locale": "ru",
+        "title": "Авторизованный пользователь"
+      },
+      {
+        "locale": "en",
+        "title": "Authenticated user"
+      }
+    ]
+  },
+  {
+    "name": "ROLE_ADMIN",
+    "isDefault": false,
+    "translations": [
+      {
+        "locale": "ru",
+        "title": "Администратор системы"
+      },
+      {
+        "locale": "en",
+        "title": "System administrator"
+      }
+    ]
+  }
+]

@@ -1,0 +1,64 @@
+preflight:
+  path: /{preflight<(.*)>}
+  controller: App\Controller\BaseController::preflight
+  methods: OPTIONS
+
+auth:
+  path: /auth
+  methods: POST
+
+user:
+  resource: 'routes/user.yaml'
+  trailing_slash_on_root: false
+  prefix: /user
+
+locales:
+  resource: 'routes/locales.yaml'
+  trailing_slash_on_root: false
+  prefix: /locales
+  defaults:
+    repositoryClass: App\Entity\Locale
+
+sites:
+  resource: 'routes/sites.yaml'
+  trailing_slash_on_root: false
+  prefix: /sites
+  defaults:
+    repositoryClass: App\Entity\Site
+
+context:
+  resource: 'routes/context.yaml'
+  trailing_slash_on_root: false
+  prefix: /context
+  defaults:
+    repositoryClass: App\Entity\Context
+
+catalog:
+  resource: 'routes/catalog/.yaml'
+  trailing_slash_on_root: false
+  prefix: /catalog
+
+content:
+  resource: 'routes/content/.yaml'
+  trailing_slash_on_root: false
+  prefix: /content
+
+vacancies:
+  resource: 'routes/vacancies/.yaml'
+  trailing_slash_on_root: false
+  prefix: /vacancies
+
+forms:
+  resource: 'routes/forms/.yaml'
+  trailing_slash_on_root: false
+  prefix: /forms
+
+mail:
+  resource: 'routes/mail/.yaml'
+  trailing_slash_on_root: false
+  prefix: /mail
+
+media:
+  resource: 'routes/media.yaml'
+  trailing_slash_on_root: false
+  prefix: /media

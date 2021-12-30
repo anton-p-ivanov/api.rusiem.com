@@ -1,0 +1,34 @@
+App\Entity\Form\Form:
+  constraints:
+    - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity: slug
+  properties:
+    title:
+      - NotBlank: ~
+      - Length:
+          max: 250
+    slug:
+      - NotBlank: ~
+      - Length:
+          max: 250
+      - Regex:
+          pattern: /^[a-z0-9_\-]+$/i
+    isPublished:
+      - Type: bool
+    publishedAt:
+      - Type: \DateTimeInterface
+    context:
+      - NotBlank: ~
+      - Type: App\Entity\Context
+    template:
+      - Type: App\Entity\Mail\Template
+    activeFrom:
+      - Type: \DateTimeInterface
+    activeTo:
+      - Type: \DateTimeInterface
+      - GreaterThan:
+          propertyPath: activeFrom
+    sites:
+      - Count:
+          min: 1
+      - All:
+          - Type: App\Entity\Site

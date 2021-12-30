@@ -1,0 +1,13 @@
+content:news:
+  resource: 'news.yaml'
+  trailing_slash_on_root: false
+  prefix: /news
+  defaults:
+    repositoryClass: App\Entity\Content\News
+
+content:articles:
+  resource: 'articles.yaml'
+  trailing_slash_on_root: false
+  prefix: /articles
+  defaults:
+    repositoryClass: App\Entity\Content\Article

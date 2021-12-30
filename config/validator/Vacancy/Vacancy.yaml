@@ -1,0 +1,39 @@
+App\Entity\Vacancy\Vacancy:
+  constraints:
+    - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity: slug
+  properties:
+    title:
+      - NotBlank: ~
+      - Length:
+          max: 250
+    slug:
+      - NotBlank: ~
+      - Length:
+          max: 250
+      - Regex:
+          pattern: /^[a-z0-9_\-]+$/i
+    description:
+      - Length:
+          max: 1000
+    content:
+      - Length:
+          max: 65535
+    isPublished:
+      - Type: bool
+    publishedAt:
+      - NotBlank: ~
+      - Type: \DateTime
+    sort:
+      - Type: numeric
+      - GreaterThan: 0
+    locale:
+      - NotBlank: ~
+      - Type: App\Entity\Locale
+    group:
+      - NotBlank: ~
+      - Type: App\Entity\Vacancy\Group
+    sites:
+      - Count:
+          min: 1
+      - All:
+          - Type: App\Entity\Site

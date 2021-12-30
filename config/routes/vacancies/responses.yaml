@@ -1,0 +1,14 @@
+vacancies:responses:list:
+  path: /
+  controller: App\Controller\BaseController::list
+  methods: GET
+
+vacancies:responses:view:
+  path: /{uuid<[\w\-]{36}>}
+  controller: App\Controller\BaseController::view
+  methods: GET
+
+vacancies:responses:delete:
+  path: /{uuid<[\w\-]{36}>}
+  controller: App\Controller\BaseController::delete
+  methods: DELETE

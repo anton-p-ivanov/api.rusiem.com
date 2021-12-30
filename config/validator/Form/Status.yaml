@@ -1,0 +1,21 @@
+App\Entity\Form\Status:
+  constraints:
+    - Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity: name
+  properties:
+    name:
+      - NotBlank: ~
+      - Length:
+          max: 250
+      - Regex:
+          pattern: /^[a-z0-9_\-]+$/i
+    isDefault:
+      - Type: bool
+    type:
+      - Choice: ['A', 'C', 'R']
+    form:
+      - NotBlank: ~
+      - Type: App\Entity\Form\Form
+    template:
+      - Type: App\Entity\Mail\Template
+    translations:
+      - Valid: ~
